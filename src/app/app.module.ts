@@ -14,6 +14,7 @@ import { MatCheckboxModule  } from '@angular/material/checkbox';
 import { MatFormFieldModule   } from '@angular/material/form-field';
 import { MatInputModule   } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { StoreModule } from "./store/store.module";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatCheckboxModule, 
     MatFormFieldModule, 
     MatInputModule, 
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    StoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

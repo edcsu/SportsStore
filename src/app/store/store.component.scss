@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    // gap: 0.2rem;
+    padding: 0.2rem;
+}
+
+.white--text {
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
