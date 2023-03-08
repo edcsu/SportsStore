@@ -1,3 +1,29 @@
+<div class="category-container">
+    <mat-card class="light-blue white--text" >
+        <mat-card-header>
+            <mat-card-title>{{categories.length}} Categories</mat-card-title>
+        </mat-card-header>
+    </mat-card>
+    
+    <div class="col-9 p-2 text-dark">
+        <mat-card  *ngFor="let product of products" class="m-1">
+            <mat-card-header>
+                <mat-card-title>{{product.name}}</mat-card-title>
+                <span class="spacer"></span>
+                <mat-chip-set>
+                    <mat-chip color="primary">
+                        {{ product.price | currency:"USD":"symbol":"2.2-2" }}
+                    </mat-chip>
+                </mat-chip-set>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    {{product.description}}
+                </p>
+            </mat-card-content>
+        </mat-card >
+    </div>
+</div>
 <div class="grid-container">
     <mat-card class="blue white--text" >
         <mat-card-header>

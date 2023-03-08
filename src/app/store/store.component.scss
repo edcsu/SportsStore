@@ -5,6 +5,13 @@
     padding: 0.2rem;
 }
 
+.category-container {
+    display: grid;
+    grid-template-columns: 20rem auto;
+    // gap: 0.2rem;
+    padding: 0.2rem;
+}
+
 .white--text {
     color: white;
 }
@@ -13,6 +20,34 @@
     background-color: blue;
 }
 
+.light-blue {
+    background-color: #02C9FD;
+}
+
 .green {
     background-color: green;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.ml-h {
+    margin-left: 0.5rem;
+}
+
+.mr-h {
+    margin-right: 0.5rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.spacer {
+    flex: 1 1 auto;
 }
