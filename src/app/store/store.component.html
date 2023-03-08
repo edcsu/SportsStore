@@ -1,8 +1,15 @@
 <div class="category-container">
-    <mat-card class="light-blue white--text" >
-        <mat-card-header>
-            <mat-card-title>{{categories.length}} Categories</mat-card-title>
-        </mat-card-header>
+    <mat-card class="" >
+        <button mat-stroked-button color="primary" class="m-1" (click)="changeCategory()">
+            Home
+          </button>
+          <button *ngFor="let cat of categories"
+                  mat-stroked-button color="primary"
+                  class="m-1"
+                  [class.active]="cat == selectedCategory"
+                  (click)="changeCategory(cat)">
+            {{cat}}
+          </button>
     </mat-card>
     
     <div class="col-9 p-2 text-dark">
@@ -23,18 +30,5 @@
             </mat-card-content>
         </mat-card >
     </div>
-</div>
-<div class="grid-container">
-    <mat-card class="blue white--text" >
-        <mat-card-header>
-            <mat-card-title>{{categories.length}} Categories</mat-card-title>
-        </mat-card-header>
-    </mat-card>
-    
-    <mat-card class="green white--text" >
-        <mat-card-header>
-            <mat-card-title>{{products.length}} Products</mat-card-title>
-        </mat-card-header>
-    </mat-card>
 </div>
   

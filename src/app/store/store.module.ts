@@ -7,9 +7,10 @@ import { MatCardModule } from "@angular/material/card";
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-    imports: [ModelModule, BrowserModule, FormsModule, MatCardModule, MatIconModule, MatBadgeModule, MatChipsModule],
+    imports: [ModelModule, BrowserModule, FormsModule, MatCardModule, MatIconModule, MatBadgeModule, MatChipsModule, MatButtonModule],
     declarations: [StoreComponent],
     exports: [StoreComponent],
     bootstrap: [StoreComponent]
