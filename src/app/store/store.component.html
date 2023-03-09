@@ -2,14 +2,15 @@
     <mat-card class="" >
         <button mat-stroked-button color="primary" class="m-1" (click)="changeCategory()">
             Home
-          </button>
-          <button *ngFor="let cat of categories"
-                  mat-stroked-button color="primary"
-                  class="m-1"
-                  [class.active]="cat == selectedCategory"
-                  (click)="changeCategory(cat)">
+        </button>
+        <button *ngFor="let cat of categories"
+            color="primary" 
+            mat-stroked-button 
+            class="mx-1 my-h"
+            [class.cat-active]="cat == selectedCategory"
+            (click)="changeCategory(cat)">
             {{cat}}
-          </button>
+        </button>
     </mat-card>
     
     <div class="col-9 p-2 text-dark">

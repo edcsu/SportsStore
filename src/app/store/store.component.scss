@@ -16,6 +16,11 @@
     color: white;
 }
 
+.cat-active {
+    background-color: rgb(240, 191, 11);
+    color: white;
+}
+
 .blue {
     background-color: blue;
 }
@@ -30,6 +35,24 @@
 
 .m-1 {
     margin: 1rem;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.my-h {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mx-h {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .ml-h {
