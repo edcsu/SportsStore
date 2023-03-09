@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { CounterDirective } from "./counter.directive";
 
 @NgModule({
     imports: [
@@ -26,7 +27,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
         MatSelectModule,
         MatButtonToggleModule
     ],
-    declarations: [StoreComponent],
+    declarations: [StoreComponent, CounterDirective],
     exports: [StoreComponent],
     bootstrap: [StoreComponent]
 
