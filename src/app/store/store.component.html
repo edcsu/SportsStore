@@ -30,6 +30,31 @@
                 </p>
             </mat-card-content>
         </mat-card >
+
+        <div class="grid-container">
+            <div class="ml-1">
+                <mat-form-field appearance="fill">
+                    <mat-label>Products per page</mat-label>
+                    <mat-select [(value)]="productsPerPage" 
+                        (change)="changePageSize($any($event).target.value)">
+                        <mat-option value="3">3 per Page</mat-option>
+                        <mat-option value="4">4 per Page</mat-option>
+                        <mat-option value="6">6 per Page</mat-option>
+                        <!-- <mat-option value="8">8 per Page</mat-option> -->
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="">
+                <span class="spacer"></span>
+
+                <mat-button-toggle-group name="pagination" aria-label="Pagination">
+                    <mat-button-toggle
+                        *ngFor="let page of pageNumbers" (click)="changePage(page)">
+                        {{page}}
+                    </mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+        </div>
     </div>
 </div>
   
