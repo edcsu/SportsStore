@@ -9,7 +9,9 @@
             (empty)
         </span>
     </small>
-    <button mat-icon-button class="icon" aria-label="icon-button with shopping icon" [disabled]="cart.itemCount == 0">
+    <button mat-icon-button class="icon" aria-label="icon-button with shopping icon"
+        routerLink="/cart"
+        [disabled]="cart.itemCount == 0">
         <mat-icon class="white--text">shopping_cart</mat-icon>
     </button>
 </div>

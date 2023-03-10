@@ -12,6 +12,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { CounterDirective } from "./counter.directive";
+import { CartDetailComponent } from "./cartDetail.component"; 
+import { CheckoutComponent } from "./checkout.component";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
     imports: [
@@ -25,10 +28,20 @@ import { CounterDirective } from "./counter.directive";
         MatButtonModule,
         MatFormFieldModule,
         MatSelectModule,
-        MatButtonToggleModule
+        MatButtonToggleModule,
+        RouterModule
     ],
-    declarations: [StoreComponent, CounterDirective],
-    exports: [StoreComponent],
+    declarations: [
+        StoreComponent, 
+        CounterDirective, 
+        CartDetailComponent, 
+        CheckoutComponent
+    ],
+    exports: [
+        StoreComponent, 
+        CartDetailComponent, 
+        CheckoutComponent
+    ],
     bootstrap: [StoreComponent]
 
 })

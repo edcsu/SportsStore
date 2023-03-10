@@ -14,8 +14,13 @@ import { MatCheckboxModule  } from '@angular/material/checkbox';
 import { MatFormFieldModule   } from '@angular/material/form-field';
 import { MatInputModule   } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 import { StoreModule } from "./store/store.module";
 import { CartSummaryComponent } from "./store/cartSummary.component";
+import { StoreComponent } from "./store/store.component";
+import { CheckoutComponent } from "./store/checkout.component"; 
+import { CartDetailComponent } from "./store/cartDetail.component"; 
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { CartSummaryComponent } from "./store/cartSummary.component";
     MatFormFieldModule, 
     MatInputModule, 
     MatSlideToggleModule,
-    StoreModule
+    StoreModule,RouterModule.forRoot([
+      { path: "store", component: StoreComponent },
+      { path: "cart", component: CartDetailComponent },
+      { path: "checkout", component: CheckoutComponent },
+      { path: "**", redirectTo: "/store" }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
