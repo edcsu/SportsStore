@@ -15,10 +15,12 @@ import { MatFormFieldModule   } from '@angular/material/form-field';
 import { MatInputModule   } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { StoreModule } from "./store/store.module";
+import { CartSummaryComponent } from "./store/cartSummary.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CartSummaryComponent
   ],
   imports: [
     BrowserModule,

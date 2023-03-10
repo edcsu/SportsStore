@@ -24,10 +24,15 @@
                     </mat-chip>
                 </mat-chip-set>
             </mat-card-header>
-            <mat-card-content>
-                <p>
-                    {{product.description}}
-                </p>
+            <mat-card-content class="my-h">
+                <span>{{product.description}}</span>
+                <span class="spacer"></span>
+
+                <button mat-raised-button color="accent" class="btn float-right "
+                        (click)="addProductToCart(product)">
+                        <span>Add To Cart</span>
+                    <mat-icon class="white--text">add_shopping_cart</mat-icon>
+                </button>
             </mat-card-content>
         </mat-card >
 
